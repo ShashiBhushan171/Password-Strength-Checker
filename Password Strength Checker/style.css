@@ -1,0 +1,47 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #23309e;
+}
+.container {
+  width: 500px;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+input[type="password"]:focus {
+  border-color: #6b7aff;
+  box-shadow: 0 0 5px rgba(107, 122, 255, 0.5);
+}
+#strength {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6b7aff;
+  transition: color 0.3s;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Evaluation Tool</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Strength Checker</h1>
+    <input 
+      type="password" 
+      id="password" 
+      placeholder="Enter your password" 
+      oninput="checkPassword()"
+    >
+    <div id="strength"></div>
+    <div id="properties" style="text-align: center;">
+        <p id="length">Length: at least 8 characters</p>
+        <p id="uppercase">Contains Uppercase Letters</p>
+        <p id="lowercase">Contains Lowercase Letters</p>
+        <p id="specialChars">Contains Special Characters</p>
+        <p id="numbers">Contains Numbers</p>
+        <p id="time_to_crack"></p>
+        <p id="note" style="display: none;">Note: If no estimated time to crack is shown for your password, then it can potentially be cracked within milliseconds.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
