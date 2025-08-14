@@ -9,6 +9,6 @@ A web-based tool that helps users create strong passwords by evaluating complexi
 - Clean and responsive UI
 
 ### 🛠️ Tech Stack
-- HTML, CSS, JavaScript
+- HTML, CSS, JavaScript and Python
 - Regex for pattern matching
 - Custom brute-force time estimation algorithm
