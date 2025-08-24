@@ -1,0 +1,121 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #947ae0;
+  padding: 10px; /* extra padding for small screens */
+}
+
+.container {
+  width: 100%;
+  max-width: 500px; /* keep the max width */
+  padding: 40px 20px; /* reduce padding on small screens */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Wrapper to align input + toggle button */
+.password-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* wrap on small screens */
+}
+
+/* Password input */
+input[type="password"],
+input[type="text"] {
+  flex: 1; /* take available width */
+  min-width: 150px;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #6b7aff;
+  box-shadow: 0 0 5px rgba(107, 122, 255, 0.5);
+}
+
+/* Common button style (Toggle, Generate, Copy) */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #947ae0;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+button:hover {
+  background-color: #6b7aff;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Align Generate + Copy buttons */
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* wrap buttons on small screens */
+}
+
+#strength {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6b7aff;
+  transition: color 0.3s;
+}
+
+/* ===== Mobile responsiveness ===== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  input[type="password"],
+  input[type="text"] {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 30px 15px;
+  }
+}
